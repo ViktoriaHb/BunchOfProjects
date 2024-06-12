@@ -13,7 +13,7 @@ A Python script that converts text from PDF files into MP3 audio files, making i
 
 **Technologies Used:**
 - **Programming Language:** Python
-- **Libraries:** PyPDF2 for reading PDF files, gTTS for text-to-speech conversion
+- **Libraries:** PyPDF2 for reading PDF files, pyttsx3 for text-to-speech conversion
 
 **Features:**
 - Extract text from PDF files
@@ -23,23 +23,6 @@ A Python script that converts text from PDF files into MP3 audio files, making i
 **Challenges Overcome:**
 - Handled various PDF text extraction issues
 - Ensured clear and accurate text-to-speech conversion
-
-## PDF File Reader
-
-**Description:**
-A Python script that reads and displays text content from PDF files, facilitating quick access to document content.
-
-**Technologies Used:**
-- **Programming Language:** Python
-- **Libraries:** PyPDF2 for reading PDF files
-
-**Features:**
-- Extract and display text from PDF files
-- Handle multiple PDF formats and layouts
-
-**Challenges Overcome:**
-- Managed text extraction from complex PDF layouts
-- Improved text rendering accuracy
 
 ## Heart Drawing with Turtle Graphics
 
@@ -67,6 +50,32 @@ graphics
 ---
 
 ## Project Details
+
+### PDFtoMP3.py
+
+**Description:**
+A python program to convert text from PDF files into MP3 audio files
+
+**Code Overview:**
+```python
+from PyPDF2 import PdfReader
+import PyPDF2
+import pyttsx3
+
+path = open(r"C:File Path","rb")
+pdfreader = PyPDF2.PdfReader(path)
+speaker = pyttsx3.init()
+
+for page_num in range(len(pdfreader.pages)):
+    text = pdfreader.pages[page_num].extract_text()
+    clean_text = text.strip().replace("\n"," ")
+    print(clean_text)
+
+speaker.save_to_file(clean_text, "story.mp3")
+speaker.runAndWait()
+
+speaker.stop()
+```
 
 ### Heart.py
 
@@ -143,6 +152,3 @@ for i in range(6000):
 done()
 ```
 
----
-
-Feel free to customize the `Repository Link` placeholders with actual URLs to your GitHub repositories. This `README.md` will help present your projects in a professional and organized manner, showcasing your skills effectively.

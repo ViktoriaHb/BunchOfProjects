@@ -6,6 +6,23 @@
 
 Here are several projects I have developed both privately and during my time at university, showcasing my coding skills and technical expertise. Im going to add more porjects with time.
 
+## First Adventure Game
+
+**Description**
+A small Project that i coded in Godot with the Help of Brackey's "How to make a Video Game in Godot" tutorial
+
+**technologies Used**
+- **Programming Language: GDScrpit
+
+**Features**
+- Movement with WASD and Arrow keys
+- Coin collecting and a counter at the end of the map
+- One slime enemy
+
+**Challenges Overcome:**
+- Learning a complelty new Engine after working with Unity for a while
+- Understanding the fundamentals of 2D Games
+
 ## PDF to MP3 Converter
 
 **Description:**
@@ -36,7 +53,7 @@ A Python program that uses the Turtle graphics library to draw a heart shape and
 **Features:**
 - Draws a heart shape using Turtle
 
-graphics
+**graphics**
 - Displays a custom message within the heart
 
 **Files:**

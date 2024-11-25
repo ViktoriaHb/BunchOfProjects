@@ -12,7 +12,7 @@ Here are several projects I have developed both privately and during my time at 
 A small Project that i coded in Godot with the Help of Brackey's "How to make a Video Game in Godot" tutorial
 
 **technologies Used**
-- **Programming Language: GDScrpit
+- **Programming Language: GDScript
 
 **Features**
 - Movement with WASD and Arrow keys

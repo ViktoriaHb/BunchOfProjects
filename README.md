@@ -1,29 +1,32 @@
-````markdown
 # BunchOfProjects
 
 ```text
-╔══════════════════════════════════════════════════════════╗
-║              VIKTORIA.HB // PROJECT ARCHIVE              ║
-║──────────────────────────────────────────────────────────║
-║  STATUS       : ONLINE                                   ║
-║  PURPOSE      : EXPERIMENTATION                          ║
-║  PROJECTS     : VARIOUS                                  ║
-║  QUALITY      : VARIABLE                                 ║
-║  DOCUMENTATION: IN PROGRESS                              ║
-╚══════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════╗
+║           VIKTORIA.HB // PROJECT ARCHIVE         ║
+║──────────────────────────────────────────────────║
+║  STATUS        : ONLINE                          ║
+║  PURPOSE       : EXPERIMENTATION                 ║
+║  PROJECTS      : VARIOUS                         ║
+║  REPAIRS       : ONGOING                         ║
+║  DOCUMENTATION : IN PROGRESS                     ║
+╚══════════════════════════════════════════════════╝
 ```
 
-A collection of personal projects, university exercises, experiments, repairs, and small things I built because I wanted to figure out how they work.
-
-Some projects are polished.
-
-Some are tiny experiments.
+A collection of personal projects, university exercises, experiments, repairs, and various things I built because I wanted to know how they worked.
 
 Some started as tutorials.
 
-Some started because I had an idea and wanted to see if I could actually build it.
+Some started as university exercises.
 
-Some never made it past the "this seemed like a good idea" stage.
+Some started because I had an idea at an inconvenient time.
+
+Some involved considerably more debugging than originally planned.
+
+Some are here simply because I thought:
+
+> "I wonder if I can build this."
+
+And some started with a broken piece of hardware sitting on my desk.
 
 More projects and documentation will be added over time.
 
@@ -31,34 +34,18 @@ More projects and documentation will be added over time.
 
 ## `00 // PROJECT INDEX`
 
-```text
-SOFTWARE
-[01] FIRST ADVENTURE GAME
-[02] PDF TO MP3 CONVERTER
-[03] HEART DRAWING WITH TURTLE
-[04] IMPROVED HEART
-[05] IT HELPDESK SIMULATOR
-
-HARDWARE
-[06] RETRO HARDWARE REPAIR LOG
-
-DOCUMENTATION
-[07] CODE ARCHIVE
-[08] WHY THIS REPOSITORY EXISTS
-
-PROJECT QUEUE
-[09] CURRENT WORK
-[10] FUTURE PROJECTS
-[11] EXPERIMENTAL IDEAS
-[12] PROJECT RULES
-[13] PROJECT STATUS
-```
+| Project | Type | Status |
+|---|---|---|
+| First Adventure Game | Game Development | Complete |
+| PDF to MP3 Converter | Python / Utility | Complete |
+| Heart Drawing | Python / Graphics | Complete |
+| Improved Heart | Python / Graphics | Complete |
+| IT Helpdesk Simulator | Roblox / Game Development | In Development |
+| Retro Hardware Repair | Hardware | Ongoing |
 
 ---
 
 ## `01 // FIRST ADVENTURE GAME`
-
-### Description
 
 A small 2D adventure game developed with Godot and GDScript.
 
@@ -66,7 +53,7 @@ This was one of my first projects in Godot and was created with the help of Brac
 
 The project was mainly about getting familiar with Godot and understanding the fundamentals of 2D game development.
 
-### Technologies Used
+### Technologies
 
 `Godot` `GDScript`
 
@@ -85,24 +72,17 @@ The project was mainly about getting familiar with Godot and understanding the f
 
 ### Status
 
-```text
-ENGINE       : GODOT
-LANGUAGE     : GDSCRIPT
-TYPE         : 2D GAME
-STATUS       : EXPERIMENTAL
-```
+**Complete**
 
 ---
 
 ## `02 // PDF TO MP3 CONVERTER`
 
-### Description
+A Python tool that extracts text from PDF files and converts it into speech audio.
 
-A Python script that converts text from PDF files into MP3 audio files, making it easier to listen to documents on the go.
+The project was created as a small practical utility while learning Python and experimenting with external libraries.
 
-The project was created as a small practical tool while learning Python and working with external libraries.
-
-### Technologies Used
+### Technologies
 
 `Python` `PyPDF2` `pyttsx3`
 
@@ -117,110 +97,72 @@ The project was created as a small practical tool while learning Python and work
 
 - Handling PDF text extraction
 - Dealing with different text formatting inside PDF documents
-- Producing clear and accurate text-to-speech output
+- Producing clear text-to-speech output
 - Working with external Python libraries
 
 ### Status
 
-```text
-LANGUAGE     : PYTHON
-TYPE         : UTILITY
-INTERFACE    : COMMAND LINE
-STATUS       : FUNCTIONAL
-```
+**Complete**
 
 ---
 
-## `03 // HEART DRAWING WITH TURTLE`
+## `03 // HEART DRAWING`
 
-### Description
+A small Python experiment using Turtle graphics to draw a heart and display a custom message.
 
-A small Python experiment using the Turtle graphics library to draw a heart and display a custom message.
+It started as a simple exercise and turned into an experiment with positioning, curves, and programmatic drawing.
 
-This started as a simple exercise in programmatic drawing and eventually turned into an experiment with positioning, curves, and Turtle's drawing functions.
-
-### Technologies Used
+### Technologies
 
 `Python` `Turtle`
 
 ### Features
 
 - Draws a heart using Turtle graphics
-- Displays a custom message inside the heart
+- Displays a custom message
 - Uses functions to structure the drawing process
 
 ### Files
 
-- `Heart.py` - Draws a heart with a custom message
-- `Improved Heart.py` - An alternative implementation using mathematical functions
-
-### Challenges
-
-- Fine-tuning Turtle movements to create a smooth heart shape
-- Positioning text inside the graphic
-- Understanding how small changes in movement affect the final shape
+- `Heart.py`
+- `Improved Heart.py`
 
 ### Status
 
-```text
-LANGUAGE     : PYTHON
-LIBRARY      : TURTLE
-TYPE         : GRAPHICS EXPERIMENT
-STATUS       : COMPLETE
-```
+**Complete**
 
 ---
 
 ## `04 // IMPROVED HEART`
 
-### Description
+An alternative version of the heart drawing experiment using mathematical functions to generate the shape.
 
-A second version of the heart drawing experiment using mathematical functions to generate the shape.
+Instead of manually defining the curves, this version uses trigonometric functions to calculate the coordinates.
 
-Instead of manually defining the curves, this version uses trigonometric functions to calculate the coordinates of the heart.
-
-### Technologies Used
+### Technologies
 
 `Python` `Math` `Turtle`
 
-### How It Works
+### What I Experimented With
 
-The heart is generated using parametric equations:
-
-```python
-def hearta(k):
-    return 15 * math.sin(k) ** 3
-
-def heartb(k):
-    return (
-        12 * math.cos(k)
-        - 5 * math.cos(2 * k)
-        - 2 * math.cos(3 * k)
-        - math.cos(4 * k)
-    )
-```
-
-The calculated coordinates are then used to draw the shape.
+- Parametric equations
+- Trigonometric functions
+- Coordinate systems
+- Programmatic drawing
 
 ### Status
 
-```text
-LANGUAGE     : PYTHON
-TYPE         : MATHEMATICAL GRAPHICS
-STATUS       : EXPERIMENTAL
-```
+**Complete**
 
 ---
 
 ## `05 // IT HELPDESK SIMULATOR`
 
-### Description
+A Roblox game currently in development.
 
-A Roblox game currently in development, built around the idea of turning IT support into a game.
+The idea is to turn IT support into a fun simulation where players deal with support requests, troubleshoot problems, manage technology, and experience the chaos of working in IT.
 
-The goal is to create a fun and somewhat chaotic IT Helpdesk Simulator where players can deal with support requests, troubleshoot problems, manage technology, and experience the kinds of situations that make IT support interesting.
-
-It's still very much a work in progress, so the exact mechanics and features are evolving as development continues.
+The game is still in development, so the mechanics and features are likely to change.
 
 ### Current Focus
 
@@ -228,73 +170,73 @@ It's still very much a work in progress, so the exact mechanics and features are
 - Designing the game's core systems
 - Creating IT support scenarios
 - Experimenting with gameplay and progression
-- Building the game's infrastructure and documentation
-- Finding ways to make IT concepts entertaining rather than just educational
+- Building the game's systems and documentation
+
+### Technologies
+
+`Roblox Studio` `Lua`
 
 ### Status
 
-```text
-ENGINE       : ROBLOX
-LANGUAGE     : LUA
-TYPE         : SIMULATION / MANAGEMENT
-STATUS       : IN DEVELOPMENT
-CURRENT TASK : MAKING IT SUPPORT FUN
-```
+**In Development**
 
-The project is intended to become a fun IT Helpdesk Simulator rather than a serious IT training application.
-
-Because apparently the natural response to working in IT is to make a game about working in IT.
+> Apparently the natural response to working in IT is to make a game about working in IT.
 
 ---
 
-## `06 // RETRO HARDWARE REPAIR LOG`
+## `06 // RETRO HARDWARE REPAIR`
 
 Not all of my projects live in a code editor.
 
 I also enjoy taking apart, troubleshooting, repairing, modifying, and restoring older hardware.
 
-I've already worked on a variety of consoles and other electronics, including:
+So far I've repaired or worked on a variety of consoles and electronics.
 
-```text
-NINTENDO
-├── 2DS                         [REPAIRED]
-├── 3DS                         [REPAIRED]
-├── Wii                         [REPAIRED]
-└── Switch                      [REPAIRED]
+### Repaired
 
-SONY
-├── PS4                         [REPAIRED]
-├── PSP                         [PLANNED]
-├── PS Vita                     [PLANNED]
-└── Walkman                     [IN PROGRESS]
+- Nintendo 2DS
+- Nintendo 3DS
+- Nintendo Wii
+- Nintendo Switch
+- Sony PS4
+- Game controllers
 
-OTHER
-└── Game Controllers            [REPAIRED]
-```
+### Currently Working On
+
+- Sony Walkman
 
 The Walkman is currently sitting open on my desk while I work through its repair.
 
-The repairs I've done so far have involved things such as troubleshooting, cleaning, disassembly, component replacement, testing, and figuring out why something that should work very much does not.
+### Planned
+
+- Sony PSP
+- PlayStation Vita
+- More retro consoles
+- More electronics
+
+The repairs involve troubleshooting, cleaning, disassembly, component replacement, testing, and figuring out why something that should work very much does not.
 
 Some of these repairs are already completed, but the detailed documentation has not made its way onto GitHub yet.
 
-That is one of the things I want to change.
+That's something I want to change.
 
-### Hardware Documentation Queue
+### What I Like About Hardware Repair
 
-```text
-[UNDOCUMENTED]  2DS
-[UNDOCUMENTED]  3DS
-[UNDOCUMENTED]  Wii
-[UNDOCUMENTED]  Switch
-[UNDOCUMENTED]  PS4
-[UNDOCUMENTED]  Controllers
-[IN PROGRESS]   Sony Walkman
-```
+There is something particularly satisfying about taking a device that has been sitting unused for years, figuring out what failed, repairing it, and seeing it work again.
 
-The goal is not simply to make old hardware work again.
+It combines:
 
-It's to understand what failed, why it failed, and how to bring it back to working condition.
+`Electronics` `Hardware` `Software` `Troubleshooting` `Patience`
+
+And occasionally a little detective work.
+
+Sometimes the problem is obvious.
+
+Sometimes it is a tiny component hiding somewhere on a board.
+
+And sometimes the solution is, unfortunately:
+
+> "Have you tried turning it off and on again?"
 
 ---
 
@@ -308,21 +250,19 @@ A Python program for extracting text from PDF files and converting it into speec
 
 ```python
 from PyPDF2 import PdfReader
-import PyPDF2
 import pyttsx3
 
-path = open(r"C:File Path", "rb")
-pdfreader = PyPDF2.PdfReader(path)
+reader = PdfReader("example.pdf")
 speaker = pyttsx3.init()
 
-for page_num in range(len(pdfreader.pages)):
-    text = pdfreader.pages[page_num].extract_text()
-    clean_text = text.strip().replace("\n", " ")
-    print(clean_text)
+for page in reader.pages:
+    text = page.extract_text()
 
-speaker.save_to_file(clean_text, "story.mp3")
+    if text:
+        print(text)
+
+speaker.save_to_file(text, "story.mp3")
 speaker.runAndWait()
-
 speaker.stop()
 ```
 
@@ -335,16 +275,13 @@ A Python program using Turtle graphics to draw a heart and display a custom mess
 ```python
 import turtle
 
-# Creating a turtle object (pen)
 pen = turtle.Turtle()
 
-# Defining a method to draw a curve
 def curve():
     for i in range(200):
         pen.right(1)
         pen.forward(1)
 
-# Defining a method to draw a full heart
 def heart():
     pen.fillcolor("red")
     pen.begin_fill()
@@ -356,7 +293,6 @@ def heart():
     pen.forward(112)
     pen.end_fill()
 
-# Defining a method to write text
 def txt():
     pen.up()
     pen.setpos(-68, 95)
@@ -367,13 +303,9 @@ def txt():
         font=("Verdana", 12, "bold")
     )
 
-# Draw a heart
 heart()
-
-# Write text
 txt()
 
-# Hide turtle
 pen.ht()
 ```
 
@@ -403,8 +335,6 @@ bgcolor("black")
 
 for i in range(6000):
     goto(hearta(i) * 20, heartb(i) * 20)
-    for j in range(5):
-        color("red")
     goto(0, 0)
 
 done()
@@ -412,7 +342,189 @@ done()
 
 ---
 
-## `08 // WHY THIS REPOSITORY EXISTS`
+## `08 // CURRENT WORK`
+
+Things currently taking up space on my desk, laptop, or somewhere inside a virtual machine.
+
+```text
+C:\VIKTORIA\PROJECTS> queue
+
+[IN PROGRESS]   ROBLOX IT HELPDESK SIMULATOR
+[IN PROGRESS]   SONY WALKMAN REPAIR
+[IN PROGRESS]   OLD LAPTOP HOMELAB
+
+[LEARNING]      KUBERNETES HOMELAB
+[LEARNING]      CONTAINER EXPERIMENTS
+
+[DONE]          SELF-HOSTED SERVICES
+[DONE]          NETWORK / MONITORING EXPERIMENTS
+
+C:\VIKTORIA\PROJECTS> _
+```
+
+---
+
+## `09 // FUTURE PROJECTS`
+
+There are always more things I want to build, repair, or experiment with.
+
+### Retro Hardware
+
+- PSP repair and modification
+- PS Vita repair and modification
+- More console repairs
+- More controller repairs
+- Hardware restoration documentation
+
+### Old Laptop Homelab
+
+I have an older laptop that I want to turn into a small playground for IT experiments.
+
+Possible uses include:
+
+- Linux
+- Docker
+- Self-hosted services
+- Monitoring
+- Networking experiments
+- Virtual machines
+- Security experiments
+- Small infrastructure projects
+
+The exact purpose will probably evolve once I start throwing things at it.
+
+### Hardware Inventory System
+
+A small application for keeping track of old hardware.
+
+Possible information:
+
+- Device
+- Model
+- Condition
+- Repair status
+- Parts needed
+- Purchase price
+- Repair cost
+- Photos
+- Notes
+
+Essentially a database for all the things that somehow ended up on my desk.
+
+### Personal Monitoring Dashboard
+
+A small dashboard combining information from different services and systems.
+
+Possible technologies:
+
+`Grafana` `Prometheus` `Uptime Kuma` `Docker`
+
+The goal would be to have one place where I can see what is happening across my little collection of machines and services.
+
+### Old Hardware Revival
+
+Take an old laptop or PC and see how far it can be brought back to life.
+
+```text
+OLD HARDWARE
+      |
+      v
+  DIAGNOSIS
+      |
+      v
+    REPAIR
+      |
+      v
+    LINUX?
+      |
+      v
+  SELF-HOSTED
+   SERVICE
+      |
+      v
+"WHY IS THIS
+ ACTUALLY WORKING?"
+```
+
+### Kubernetes Homelab
+
+Continue learning Kubernetes by gradually expanding my small experimental cluster.
+
+This is currently a learning project rather than a claim of Kubernetes expertise.
+
+Possible areas to explore:
+
+- Deployments
+- Services
+- Networking
+- Persistent storage
+- Ingress
+- Monitoring
+- Container orchestration
+
+---
+
+## `10 // EXPERIMENTAL IDEAS`
+
+Not every idea needs to become a serious project.
+
+Some things are interesting simply because I want to see if I can make them work.
+
+### Personal IT Lab
+
+A small isolated environment where I can experiment with:
+
+`Linux` `Docker` `Virtual Machines` `Networking` `Monitoring` `Security`
+
+The basic idea:
+
+```text
+BREAK IT
+   |
+   v
+FIND OUT WHY
+   |
+   v
+FIX IT
+   |
+   v
+DOCUMENT IT
+   |
+   v
+BREAK SOMETHING ELSE
+```
+
+### Old Hardware Server
+
+Take an old laptop or PC and turn it into something genuinely useful.
+
+Maybe a server.
+
+Maybe a monitoring system.
+
+Maybe a collection of containers.
+
+Maybe all of the above.
+
+### Too Many Virtual Machines
+
+Because apparently having one virtual machine is not enough.
+
+```text
+VM 01
+ |
+ +-- VM 02
+      |
+      +-- VM 03
+           |
+           +-- "This was a bad idea."
+```
+
+**Status:** Idea
+
+---
+
+## `11 // WHY THIS REPOSITORY EXISTS`
 
 Not every project needs to become a polished application.
 
@@ -436,148 +548,9 @@ Or, in the case of hardware:
 
 This repository is where those projects can live.
 
-I also want to keep some of the older projects around instead of hiding them once I've learned something more advanced. They show where I started and how my approach to programming, troubleshooting, and technology changes over time.
+I also want to keep some of the older projects around instead of hiding them once I've learned something more advanced.
 
----
-
-## `09 // CURRENT WORK`
-
-Things that are currently taking up space on my desk, in my laptop, or somewhere inside a virtual machine.
-
-```text
-C:\VIKTORIA\PROJECTS> queue
-
-[IN PROGRESS]   ROBLOX IT HELPDESK SIMULATOR
-[IN PROGRESS]   SONY WALKMAN REPAIR
-[IN PROGRESS]   OLD LAPTOP HOMELAB
-
-[LEARNING]      KUBERNETES HOMELAB
-[LEARNING]      CONTAINER EXPERIMENTS
-
-[DONE]          SELF-HOSTED SERVICES
-[DONE]          NETWORK / MONITORING EXPERIMENTS
-
-C:\VIKTORIA\PROJECTS> _
-```
-
----
-
-## `10 // FUTURE PROJECTS`
-
-Things I want to build, repair, experiment with, or learn more about.
-
-```text
-[PLANNED]       PSP REPAIR / MODIFICATION
-[PLANNED]       PS VITA REPAIR / MODIFICATION
-
-[PLANNED]       EXPAND THE OLD LAPTOP HOMELAB
-[PLANNED]       MORE SELF-HOSTED SERVICES
-[PLANNED]       NETWORK EXPERIMENTS
-[PLANNED]       MONITORING PROJECTS
-
-[PLANNED]       HARDWARE INVENTORY SYSTEM
-[PLANNED]       PERSONAL MONITORING DASHBOARD
-[PLANNED]       OLD HARDWARE REVIVAL PROJECT
-
-[IDEA]          SOMETHING INVOLVING TOO MANY VIRTUAL MACHINES
-[IDEA]          SOMETHING THAT PROBABLY SHOULD NOT BE RUN ON AN OLD LAPTOP
-```
-
-The list will probably change.
-
-Some projects will move from `PLANNED` to `DONE`.
-
-Some will be abandoned.
-
-Some will turn into something completely different.
-
-That's fine.
-
----
-
-## `11 // EXPERIMENTAL IDEAS`
-
-Not everything in the project queue has to be serious.
-
-Some ideas are here because they sound fun.
-
-### Hardware Inventory System
-
-A small application for keeping track of old hardware, including:
-
-- Device
-- Model
-- Condition
-- Repair status
-- Parts needed
-- Purchase price
-- Repair cost
-- Notes
-- Photos
-
-Essentially a database for all the things that somehow ended up on my desk.
-
-### Old Hardware Revival
-
-Find an old laptop, PC, or other piece of hardware and see how far it can be brought back to life.
-
-```text
-OLD HARDWARE
-      |
-      v
-  DIAGNOSIS
-      |
-      v
-    REPAIR
-      |
-      v
-   LINUX?
-      |
-      v
-  SELF-HOSTED
-   SERVICE
-      |
-      v
-"WHY IS THIS
- ACTUALLY WORKING?"
-```
-
-### Personal Infrastructure Lab
-
-Build a small isolated environment for experimenting with:
-
-`Linux` `Docker` `Virtual Machines` `Networking` `Monitoring` `Security`
-
-The goal would be to break things safely, document what happened, and learn how to fix them.
-
-### Kubernetes Homelab
-
-Continue learning Kubernetes by gradually expanding from a small experimental cluster into something more useful.
-
-Possible areas to explore:
-
-- Kubernetes fundamentals
-- Container networking
-- Services and deployments
-- Persistent storage
-- Ingress
-- Monitoring
-- Container orchestration
-
-This is a learning project rather than a claim of Kubernetes expertise.
-
-### The Questionable Project
-
-Every project archive needs one.
-
-The details are currently classified.
-
-```text
-PROJECT: ????
-STATUS : QUESTIONABLE
-PURPOSE: UNKNOWN
-RISK   : PROBABLY FINE
-```
+They show where I started, what I experimented with, and how my approach to programming and technology changes over time.
 
 ---
 
@@ -594,31 +567,25 @@ RULE 07  - If it doesn't work, investigate.
 RULE 08  - "I'll fix it later" is not documentation.
 ```
 
-Projects may change, disappear, get abandoned, or turn into something completely different.
-
-That's fine.
-
-This repository is about learning and experimenting, not maintaining a perfect record of finished products.
-
 ---
 
 ## `13 // PROJECT STATUS`
 
 ```text
-┌──────────────────────────────────────────────────────────┐
-│ VIKTORIA.HB // PROJECT ARCHIVE STATUS                    │
-├──────────────────────────────────────────────────────────┤
-│                                                          │
-│  SOFTWARE              .......... ACTIVE                 │
-│  HARDWARE              .......... ACTIVE                 │
-│  REPAIRS               .......... ONGOING                │
-│  EXPERIMENTS           .......... ONGOING                │
-│  DOCUMENTATION         .......... IMPROVING              │
-│  IDEAS                 .......... ACCUMULATING           │
-│  BROKEN THINGS         .......... EXPECTED               │
-│  COFFEE                .......... REQUIRED               │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│ VIKTORIA.HB // PROJECT ARCHIVE STATUS            │
+├──────────────────────────────────────────────────┤
+│                                                  │
+│  SOFTWARE          .......... ACTIVE             │
+│  HARDWARE          .......... ACTIVE             │
+│  REPAIRS           .......... ONGOING            │
+│  EXPERIMENTS       .......... ONGOING            │
+│  DOCUMENTATION     .......... IMPROVING          │
+│  IDEAS             .......... ACCUMULATING       │
+│  BROKEN THINGS     .......... EXPECTED           │
+│  COFFEE            .......... REQUIRED           │
+│                                                  │
+└──────────────────────────────────────────────────┘
 
 C:\VIKTORIA\PROJECTS> _
 ```
@@ -628,4 +595,3 @@ More projects will be added as I build, experiment, learn, repair, and inevitabl
 ```text
 END OF ARCHIVE
 ```
-````

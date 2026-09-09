@@ -1,4 +1,4 @@
-```markdown
+````markdown
 # BunchOfProjects
 
 ```text
@@ -50,6 +50,8 @@ PROJECT QUEUE
 [09] CURRENT WORK
 [10] FUTURE PROJECTS
 [11] EXPERIMENTAL IDEAS
+[12] PROJECT RULES
+[13] PROJECT STATUS
 ```
 
 ---
@@ -239,7 +241,7 @@ STATUS       : IN DEVELOPMENT
 CURRENT TASK : MAKING IT SUPPORT FUN
 ```
 
-The project is intended to eventually become a fun IT Helpdesk Simulator rather than a serious IT training application.
+The project is intended to become a fun IT Helpdesk Simulator rather than a serious IT training application.
 
 Because apparently the natural response to working in IT is to make a game about working in IT.
 
@@ -263,11 +265,11 @@ NINTENDO
 SONY
 ├── PS4                         [REPAIRED]
 ├── PSP                         [PLANNED]
-├── PS VITA                     [PLANNED]
+├── PS Vita                     [PLANNED]
 └── Walkman                     [IN PROGRESS]
 
 OTHER
-└── Game Controllers             [REPAIRED]
+└── Game Controllers            [REPAIRED]
 ```
 
 The Walkman is currently sitting open on my desk while I work through its repair.
@@ -610,7 +612,7 @@ This repository is about learning and experimenting, not maintaining a perfect r
 │  SOFTWARE              .......... ACTIVE                 │
 │  HARDWARE              .......... ACTIVE                 │
 │  REPAIRS               .......... ONGOING                │
-│  EXPERIMENTS            .......... ONGOING               │
+│  EXPERIMENTS           .......... ONGOING                │
 │  DOCUMENTATION         .......... IMPROVING              │
 │  IDEAS                 .......... ACCUMULATING           │
 │  BROKEN THINGS         .......... EXPECTED               │
@@ -626,4 +628,4 @@ More projects will be added as I build, experiment, learn, repair, and inevitabl
 ```text
 END OF ARCHIVE
 ```
-```
+````
